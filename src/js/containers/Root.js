@@ -17,7 +17,9 @@ export default class Root extends Component { // eslint-disable-line
     return (
       <Provider store={store}>
         <div>
-          <Router history={history} routes={Routes} />
+          <Router history={history}>
+            {Routes}
+          </Router>
           {this.renderDevTools()}
         </div>
       </Provider>
