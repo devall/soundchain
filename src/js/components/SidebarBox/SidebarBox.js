@@ -1,13 +1,19 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
 import cx from './SidebarBox.styl';
+import LogoImage from '../../../assets/images/sprites/logo.png';
 
 export default class SidebarBox extends Component {
 
   render() {
     return (
       <aside className={cx('sidebar-box')}>
-        <div>Logo</div>
+        <div>
+          <a href='#' className={cx('logo')}>
+            <img src={LogoImage} alt='logo' />
+            <h1>SOUNDCHAIN</h1>
+          </a>
+        </div>
         <div>FinanceBox</div>
 
         <div className={cx('nav')}>
