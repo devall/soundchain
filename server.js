@@ -11,6 +11,7 @@ const PORT = process.env.PORT || 8090;
 
 const hot = require('webpack-hot-middleware')(compiler);
 const dev = require('webpack-dev-middleware')(compiler, {
+    historyApiFallback: true,
     noInfo: true,
     publicPath: config.output.publicPath,
     stats: {
@@ -27,8 +28,15 @@ app.use(dev);
 app.use(hot);
 
 app.get('*', (req, res) => {
-  const index = dev.fileSystem.readFileSync(path.join(config.output.path, 'index.html'), 'utf8');
-  res.end(index);
+  const filename = path.join(compiler.outputPath, 'index.html');
+  compiler.outputFileSystem.readFile(filename, function(err, result){
+    if (err) {
+      return next(err);
+    }
+    res.set('content-type','text/html');
+    res.send(result);
+    res.end();
+  });
 });
 
 app.listen(PORT, HOST, err => {

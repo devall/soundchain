@@ -6,6 +6,7 @@ const baseConfig = Object.create(webpackBaseConfig);
 baseConfig.devtool = 'eval';
 
 baseConfig.entry.main = [
+  'react-hot-loader/patch',
   'webpack-hot-middleware/client',
   './src/js/index.js'
 ];
@@ -19,13 +20,13 @@ baseConfig.plugins.push(
 );
 
 baseConfig.module.loaders.push({
-  test: /\.(css|styl)$/, 
+  test: /\.(css|styl)$/,
   include: /(src)/,
   loader: 'classnames!style!css?importLoaders=1&localIdentName=[local]---[name]---[hash:base64:5]!stylus'
 });
 
 baseConfig.module.loaders.push({
-  test: /\.(css)$/, 
+  test: /\.(css)$/,
   include: /(node_modules\/normalize.css)/,
   loader: 'classnames!style!css?importLoaders=1&localIdentName=[local]---[name]---[hash:base64:5]!stylus'
 });
