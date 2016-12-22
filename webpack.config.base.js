@@ -45,7 +45,7 @@ module.exports = {
     }])*/
   ],
   resolve: {
-    extensions: ['', '.js', '.css'],
+    extensions: ['', '.js', '.css', '.svg'],
     modulesDirectories: [ 
       'src',
       'node_modules'

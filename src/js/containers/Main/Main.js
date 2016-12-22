@@ -11,6 +11,8 @@ import SidebarBox from '../../components/SidebarBox';
 import ContentBox from '../../components/ContentBox';
 import PlayerPanel from '../../components/PlayerPanel';
 
+import BottomPanel from '../../components/BottomPanel/BottomPanel';
+
 import cx from './Main.styl';
 
 /*
@@ -54,8 +56,9 @@ export default class Main extends Component {
           <ContentBox>
             {content}
           </ContentBox>
-
-          <PlayerPanel />
+          <BottomPanel>
+            <PlayerPanel />
+          </BottomPanel>
         </section>
 
       </section>

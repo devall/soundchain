@@ -1,0 +1,30 @@
+.stream {
+  width: 100%;
+
+  &-top {
+    height: 200px;
+    background: url("background.png");
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &-title {
+      color: white;
+      flex: 1;
+      padding: 0 5%;
+
+      &-header {
+        margin: 0;
+        font-size: 3em;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+
+      &-desc {
+        color: rgba(256, 256, 256, 0.75);
+      }
+    }
+  }
+}

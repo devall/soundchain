@@ -1,1 +1,1 @@
-export default from './NavigationTop';
+export default from './NavigationTop'
