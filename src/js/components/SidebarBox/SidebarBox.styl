@@ -2,12 +2,32 @@
   &-box {
     display: flex;
     flex-direction: column;
-    background-color: #391e15;
+
+    background: #391e15 linear-gradient(-150deg, #382019, #391e15, #1c1a1b, #1a1814);
   }
 
   &-content {
     padding: 0 1.5em;
     flex: 1;
+  }
+
+  &-player {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+
+    &-control, &-control-big {
+      padding: 0 20px;
+      > * {
+        width: 60px;
+      }
+    }
+    &-control-big > *{
+      width: 75px;
+    }
   }
 }
 

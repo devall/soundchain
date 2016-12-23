@@ -1,0 +1,45 @@
+.trackbox {
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+
+  &-info {
+    margin-left: 25px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    > * {
+      align-self: flex-start;
+    }
+
+    &-album {
+      font-size: 0.8em;
+      text-transform: uppercase;
+      color: #acacac;
+    }
+
+    &-name {
+      font-size: 1.2em;
+      color: #000;
+    }
+  }
+
+  &-player {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-fullmode {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-album {
+    height: 80px;
+  }
+}

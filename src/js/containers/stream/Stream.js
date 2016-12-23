@@ -13,7 +13,7 @@ export default class Stream extends Component {
               Stream
             </p>
             <p className={cx("stream-top-title-desc")}>
-              Hear the latest ...
+              Hear the latest post from the people you’re following
             </p>
           </div>
         </div>

@@ -7,8 +7,24 @@ import BottomPanel from '../BottomPanel/BottomPanel'
 
 import { NavigationGroup, NavigationItem } from "../Navigation/Navigation"
 
+import { ButtonNextSong, ButtonPlay, ButtonPrevSong } from './Icons';
+
 import cx from './SidebarBox.styl';
 
+function PlayerControls(props) {
+  return (
+    <div className={cx("sidebar-player")}>
+      <div className={cx("sidebar-player-control")}>
+        <ButtonPrevSong/>
+      </div>
+      <div className={cx("sidebar-player-control-big")}>
+        <ButtonPlay/>
+      </div>
+      <div className={cx("sidebar-player-control")}>
+        <ButtonNextSong/>
+      </div>
+    </div>);
+}
 
 export default class SidebarBox extends Component {
   render() {
@@ -28,7 +44,7 @@ export default class SidebarBox extends Component {
           </NavigationGroup>
         </div>
 
-        <BottomPanel>PlayerControls</BottomPanel>
+        <BottomPanel><PlayerControls/></BottomPanel>
       </aside>
     );
   }
