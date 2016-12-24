@@ -12,7 +12,7 @@ import cx from './TrackPlayerComponents.styl'
 
 function PlayButtonController(props) {
   //TODO change to stateful component later.
-  return <img className={props.className + " " + cx("button__play")} src={props.isPlaying ? props.playIcon : props.pauseIcon}/>
+  return <img className={(props.className ? props.className + " " : "") + cx("button__play")} src={props.isPlaying ? props.playIcon : props.pauseIcon}/>
 }
 
 export function SmallPlayButton(props) {

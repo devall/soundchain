@@ -6,13 +6,13 @@
     background: #391e15 linear-gradient(-150deg, #382019, #391e15, #1c1a1b, #1a1814);
   }
 
-  &-content {
+  &__content {
     padding: 0 1.5em;
     flex: 1;
     overflow-y: auto;
   }
 
-  &-player {
+  &__player {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -20,13 +20,15 @@
 
     height: 100%;
 
-    &-control, &-control-big {
+    &__control, &__control--big {
       padding: 0 20px;
-      > * {
-        width: 60px;
-      }
     }
-    &-control-big > *{
+
+    &__control > * {
+      width: 60px;
+    }
+
+    &__control--big {
       width: 75px;
     }
   }

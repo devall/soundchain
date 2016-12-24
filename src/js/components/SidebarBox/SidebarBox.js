@@ -7,7 +7,8 @@ import BottomPanel from '../BottomPanel/BottomPanel'
 
 import { NavigationGroup, NavigationItem } from "../Navigation/Navigation"
 
-import { ButtonNextSong, ButtonPlay, ButtonPrevSong } from './Icons';
+import { ButtonNextSong, ButtonPrevSong } from './Icons';
+import { PlayButton } from "../TrackPlayerComponents"
 
 import cx from './SidebarBox.styl';
 
@@ -19,17 +20,16 @@ import FollowingIcon from "./ico_Followin";
 
 function PlayerControls(props) {
   return (
-    <div className={cx("sidebar-player")}>
-      <div className={cx("sidebar-player-control")}>
+    <div className={cx("sidebar__player")}>
+      <div className={cx("sidebar__player__control")}>
         <ButtonPrevSong/>
       </div>
-      <div className={cx("sidebar-player-control-big")}>
-        <ButtonPlay/>
-      </div>
-      <div className={cx("sidebar-player-control")}>
+      <PlayButton className={cx("sidebar__player__control--big")}/>
+      <div className={cx("sidebar__player__control")}>
         <ButtonNextSong/>
       </div>
-    </div>);
+    </div>
+  );
 }
 
 export default class SidebarBox extends Component {
@@ -39,7 +39,7 @@ export default class SidebarBox extends Component {
         <Logo />
         <FinanceBox />
 
-        <div className={cx('sidebar-content')}>
+        <div className={cx('sidebar__content')}>
           <NavigationGroup name="Principal">
             <NavigationItem icon={<img src={StreamIcon}/>} isActive={true}>Stream</NavigationItem>
             <NavigationItem icon={<img src={Top50Icon}/>} isActive={false}>Top 50</NavigationItem>
