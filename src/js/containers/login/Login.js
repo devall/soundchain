@@ -1,14 +1,16 @@
 import React, { Component, PropTypes } from 'react';
 import cx from './Login.styl';
 
+import Logo from './Logo.png';
+
 /*
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import { replace } from 'react-router-redux';
 
-import Loader from 'components/Loader';
+import Loader from 'components/Loader';*/
 import LoginForm from 'components/LoginForm';
-import { loginContainerSelector } from 'selectors';
+/*import { loginContainerSelector } from 'selectors';
 import { registrationSubmit, loginSubmit, checkAuth } from 'actions';
 
 function mapDispatchToProps(dispatch) {
@@ -58,20 +60,25 @@ export default class Login extends Component {
 
     return (
       <div className={cx('login')}>
-        <div className={cx('login__left')}>
-          Logo
-        </div>
+        <div className={cx('login__content')}>
+          <div className={cx('login__left')}>
+            <img className={cx('login__logo')} src={Logo}/>
+          </div>
 
-        <div className={cx('login__right')}>
-          Slogan
-          {/*
-          <LoginForm
-            onLogin={loginSubmit}
-            onRegistration={registrationSubmit}
-            inProgress={isLoginLoading}
-            errors={errors}
-          />
-          */}
+          <div className={cx('login__right')}>
+            <div className={cx("login__slogan")}>
+              Find the music you love.<br/>
+              Discover new tracks.<br/>
+              Connect directly with<br/>
+              you favorite artists.
+            </div>
+            <LoginForm
+              t={""/*onLogin={loginSubmit}
+              onRegistration={registrationSubmit}
+              inProgress={isLoginLoading}
+              errors={errors}*/}
+            />
+          </div>
         </div>
       </div>
     );

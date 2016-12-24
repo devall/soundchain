@@ -5,11 +5,9 @@ import LogoImage from './Logo.png';
 export default class Logo extends Component {
   render() {
     return (
-      <div>
-        <a href='#' className={cx('logo')}>
-          <img src={LogoImage} alt='logo' />
-        </a>
-      </div>
+      <a href='#' className={cx('logo')}>
+        <img className={cx('logo__image')} src={LogoImage} alt='logo' />
+      </a>
     )
   }
 }

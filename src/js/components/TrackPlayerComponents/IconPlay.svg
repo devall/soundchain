@@ -1,0 +1,19 @@
+<svg id="Play" xmlns="http://www.w3.org/2000/svg" width="69" height="69" viewBox="0 0 69 69">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #acacac;
+      }
+
+      .cls-2 {
+        fill: #ededed;
+        stroke: #ededed;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <circle class="cls-1" cx="34.5" cy="34.5" r="34.5"/>
+  <path id="Polygone_2" data-name="Polygone 2" class="cls-2" d="M1048.62,726l-14.25,9.51V716.486Z" transform="translate(-1005 -692)"/>
+</svg>

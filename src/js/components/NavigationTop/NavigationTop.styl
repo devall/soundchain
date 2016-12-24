@@ -1,23 +1,34 @@
 .navigation-top {
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: row;
 
-  &-element {
-    display: flex;
-    height: 20px;
-    padding: 10px 15px;
+  &__element {
+    &--avatar {
+      height: 45px;
+      padding: 0 15px;
+    }
 
-    &-main {
+    &, &--main {
+      height: 25px;
+      padding: 10px 15px;
+      > * {
+        height: 25px;
+      }
+    }
+    &--main {
       flex: 1;
     }
   }
 
-  &-search {
+  &__search {
+    width: 100%;
+
     border: none;
+    background-color: rgba(0, 0, 0, 0);
   }
 
-  &-search:focus {
+  &__search:focus {
     outline: #36373c auto 5px;
   }
 }

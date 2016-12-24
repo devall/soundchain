@@ -1,0 +1,11 @@
+<svg id="more" xmlns="http://www.w3.org/2000/svg" width="8" height="32" viewBox="0 0 8 32">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36373c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_more" class="cls-1" d="M2202,197a4,4,0,1,1-4,4A4,4,0,0,1,2202,197Zm0,12a4,4,0,1,1-4,4A4,4,0,0,1,2202,209Zm0,12a4,4,0,1,1-4,4A4,4,0,0,1,2202,221Z" transform="translate(-2198 -197)"/>
+</svg>

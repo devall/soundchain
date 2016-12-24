@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import { range } from 'lodash';
 import cx from './Stream.styl';
 
+import MusicTrack from "../../components/MusicTrack";
+
 export default class Stream extends Component {
   render() {
     return (
@@ -18,7 +20,7 @@ export default class Stream extends Component {
           </div>
         </div>
         <div className={cx('stream-content')}>
-          {range(1,50).map((v, i) => <div key={i}>StreamTrack</div>)}
+          {range(1,10).map((v, i) => <MusicTrack playerMode={false} albumImageUrl="https://pp.vk.me/c604817/v604817661/1a12c/s7ex-DUOodk.jpg"/>)}
         </div>
       </div>
     );

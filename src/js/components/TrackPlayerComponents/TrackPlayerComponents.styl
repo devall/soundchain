@@ -1,0 +1,77 @@
+@import '../../../css/variables.styl'
+
+.button {
+  &__like {
+    fill-rule: evenodd;
+    fill: color-not-activated;
+
+    &--active {
+      fill: color-activated;
+    }
+  }
+
+  &-play {
+    fill: #acacac;
+    &-active {
+      fill: #04bd5b;
+    }
+
+    &, &-active {
+      fill-rule: evenodd;
+    }
+  }
+}
+
+.track-info {
+  margin: 0 15px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  &__album {
+    font-size: 0.8em;
+    text-transform: uppercase;
+    color: #acacac;
+  }
+
+  &__name {
+    font-size: 1.2em;
+    color: #000;
+  }
+}
+
+.track-timeline {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  flex: 1;
+
+  &__current-time {
+    color: #04bd5b;
+  }
+
+  &__progress-bar {
+    flex: 1;
+    height: 2px;
+    margin: 0 5px;
+
+    border: 0;
+    border-radius: 0;
+
+    appearance: none;
+    background: #c0c0c0;
+    &::-webkit-progress-value {
+      background: #04bd5b;
+    }
+    &::-moz-progress-bar {
+      background: #04bd5b;
+    }
+  }
+
+  &__total-time {
+    color: #c0c0c0;
+  }
+}

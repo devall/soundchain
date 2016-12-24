@@ -3,8 +3,8 @@ import cx from './Navigation.styl';
 
 export function NavigationGroup(props) {
   return (
-    <div className={cx("navigation-group")}>
-      <h3 className={cx("navigation-group-name")}>{props.name}</h3>
+    <div className={cx("navigation__group")}>
+      <h3 className={cx("navigation__group__name")}>{props.name}</h3>
       {props.children}
     </div>
   );
@@ -13,9 +13,9 @@ export function NavigationGroup(props) {
 //TODO add element with "React Router Link"-like color highlight
 export function NavigationItem(props) {
   return (
-    <div className={cx("navigation-item" + (props.isActive ? "-active" : ""))}>
-      {props.icon}
-      <div className={cx("navigation-item-name")}>{props.children}</div>
+    <div className={cx("navigation__item", {"navigation__item--active": props.isActive})}>
+      <div className={cx("navigation__item__icon")}>{props.icon}</div>
+      <div className={cx("navigation__item__name")}>{props.children}</div>
     </div>
   );
 }

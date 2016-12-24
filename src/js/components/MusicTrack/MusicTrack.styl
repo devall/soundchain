@@ -1,45 +1,63 @@
-.trackbox {
-  height: 100%;
-
-  display: flex;
-  flex-direction: row;
-
-  &-info {
-    margin-left: 25px;
+.track {
+  &__box {
     height: 100%;
-    display: flex;
-    flex-direction: column;
 
-    align-items: center;
-    justify-content: center;
-
-    > * {
-      align-self: flex-start;
-    }
-
-    &-album {
-      font-size: 0.8em;
-      text-transform: uppercase;
-      color: #acacac;
-    }
-
-    &-name {
-      font-size: 1.2em;
-      color: #000;
-    }
-  }
-
-  &-player {
     display: flex;
     flex-direction: row;
+
+    &--fullmode {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+    }
+
+    &--fullmode > &__album {
+      height: 160px;
+    }
+
+    & > &__album {
+      height: 80px;
+    }
   }
 
-  &-fullmode {
-    display: flex;
-    flex-direction: column;
-  }
+  &__player {
+    &--compact, &--full {
 
-  &-album {
-    height: 80px;
+    }
+
+    &--full {
+      display: flex;
+      flex-direction: column;
+
+      &__context-top {
+        display: flex;
+        flex-direction: row;
+
+        flex: 0.4;
+      }
+
+      &__context-bottom {
+        display: flex;
+        flex-direction: row;
+
+        flex: 0.6;
+      }
+    }
+
+    &--compact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      flex: 1;
+
+      & > .track__player__button {
+        height: 16px;
+      }
+    }
+
+    &__button {
+      margin: 0 10px;
+    }
   }
 }

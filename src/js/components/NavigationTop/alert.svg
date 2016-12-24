@@ -1,0 +1,11 @@
+<svg id="alert" xmlns="http://www.w3.org/2000/svg" width="28" height="34" viewBox="0 0 28 34">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #36373c;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="ico_alert" class="cls-1" d="M2129,228a5.229,5.229,0,0,0,4.72-2.989h-9.44A5.229,5.229,0,0,0,2129,228Zm14-10.462-2.24-2.241v-6.006a11.774,11.774,0,0,0-9.52-11.555v-1.494a2.24,2.24,0,1,0-4.48,0v1.494a11.774,11.774,0,0,0-9.52,11.555V215.3l-2.24,2.241v5.231h28v-5.231Z" transform="translate(-2115 -194)"/>
+</svg>

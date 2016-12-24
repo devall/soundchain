@@ -24,7 +24,7 @@ const requireAuth = (nextState, replace) => {
     });
   }
   */
-}
+};
 
 const requireNotLoggedIn = (nextState, replace) => {
   /*
@@ -32,7 +32,7 @@ const requireNotLoggedIn = (nextState, replace) => {
     replace('/channels');
   }
   */
-}
+};
 
 export default (
   <Route component={App}>

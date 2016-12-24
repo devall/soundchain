@@ -11,6 +11,12 @@ import { ButtonNextSong, ButtonPlay, ButtonPrevSong } from './Icons';
 
 import cx from './SidebarBox.styl';
 
+import StreamIcon from "./ico_Stream.png";
+import Top50Icon from "./ico_top50";
+import NewChartsIcon from "./ico_new_charts.png";
+import FavsIcon from "./ico_favourite";
+import FollowingIcon from "./ico_Followin";
+
 function PlayerControls(props) {
   return (
     <div className={cx("sidebar-player")}>
@@ -35,8 +41,11 @@ export default class SidebarBox extends Component {
 
         <div className={cx('sidebar-content')}>
           <NavigationGroup name="Principal">
-            <NavigationItem isActive={true}>Stream</NavigationItem>
-            <NavigationItem isActive={false}>Top 50</NavigationItem>
+            <NavigationItem icon={<img src={StreamIcon}/>} isActive={true}>Stream</NavigationItem>
+            <NavigationItem icon={<img src={Top50Icon}/>} isActive={false}>Top 50</NavigationItem>
+            <NavigationItem icon={<img src={NewChartsIcon}/>} isActive={false}>New charts</NavigationItem>
+            <NavigationItem icon={<img src={FavsIcon}/>} isActive={false}>Favourites</NavigationItem>
+            <NavigationItem icon={<img src={FollowingIcon}/>} isActive={false}>Following</NavigationItem>
           </NavigationGroup>
           <NavigationGroup name="Playlist">
           </NavigationGroup>
