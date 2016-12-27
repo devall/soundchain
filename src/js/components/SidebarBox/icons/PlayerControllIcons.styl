@@ -1,0 +1,22 @@
+.player-control-button {
+  &__background-circle {
+    fill: #fff;
+    opacity: 0.1;
+    transition: opacity 0.5s;
+  }
+
+  &:hover > &__background-circle {
+    opacity: 0.2;
+  }
+
+  &__player-element {
+    fill: #acacac;
+
+    &--with-border {
+      stroke: #acacac;
+      stroke-linejoin: round;
+      stroke-width: 3px;
+      fill-rule: evenodd;
+    }
+  }
+}

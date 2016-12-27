@@ -1,5 +1,5 @@
 import React from 'react'
-import NotificatoinIcon from './alert.svg'
+import NotificatoinIcon from '../icons/IconAlert.svg'
 
 export function NotificatoinButton(props) {
   return <img src={NotificatoinIcon} {...props}/>;

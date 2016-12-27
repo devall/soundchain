@@ -1,0 +1,148 @@
+@import "../../../css/variables.styl"
+
+.track {
+  &__box {
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    &--fullmode {
+      display: flex;
+      flex-direction: row;
+      margin: 20px;
+    }
+
+    &--fullmode > &__album {
+      height: 200px;
+    }
+
+    & > &__album {
+      height: 70px;
+    }
+  }
+
+  &__player {
+    &__released-ago {
+      text-transform: uppercase;
+      color: #acacac;
+      letter-spacing: 1px;
+      font-weight: 400;
+    }
+
+    &__tag {
+      background-color: #4fbd61;
+      border-radius: 100px;
+      padding: 5px 8px;
+      text-transform: uppercase;
+      color: main-background-color;
+      letter-spacing: 2px;
+    }
+
+    &--full {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      padding: 0 20px;
+
+      &__context-top {
+        display: flex;
+        flex-direction: row;
+
+        flex: 0.4;
+      }
+
+      &__context-bottom {
+        display: flex;
+        flex-direction: row;
+
+        flex: 0.6;
+        width: 100%;
+        margin: 15px;
+      }
+    }
+
+    &--compact {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      flex: 1;
+
+      &__info {
+        position: relative;
+        flex: 0.5;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &::after {
+          content: '';
+
+          position: absolute;
+          top: 0;
+          right: 0;
+
+          width: 60px;
+          height: 100%;
+
+          background: linear-gradient(to right, main-background-color - rgba(0, 0, 0, 0.8), main-background-color 100%);
+        }
+      }
+
+      &__controls {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 1;
+
+        & > .track__player__button {
+          height: 16px;
+        }
+
+        & > .track__player__button--big {
+          height: 25px;
+        }
+      }
+    }
+
+    &__button {
+      margin: 0 10px;
+    }
+
+    &__button--big {
+      margin: 0 5px;
+    }
+  }
+}
+
+:local .left {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  font-size: 1.6em;
+}
+
+:local .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__column {
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 60px;
+
+    &__item {
+      flex: 1;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+}

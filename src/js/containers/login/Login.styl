@@ -2,31 +2,35 @@
   display: flex;
   flex: 1;
 
-  align-items: center;
   justify-content: center;
 
-  background: #262626;
-  color: #fff;
+  padding: 4%;
 
-  &__content {
-    display: flex;
-    width: 1200px;
-    height: 800px;
-  }
+  background: #262626;
+
+  color: #fff;
+  letter-spacing: 3px;
+  font-size: 1.5vmin;
 
   &__left,
   &__right {
     flex: 1;
   }
 
+  &__left {
+    display: flex;
+    justify-content: center;
+  }
+
   &__slogan {
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 4em;
+    font-weight: 500;
     line-height: 1.2;
-    margin-bottom: 40px;
+    margin-bottom: 0.5em;
   }
 
   &__logo {
-    height: 35px;
+    height: 4vh;
+    max-width: 40vw;
   }
 }

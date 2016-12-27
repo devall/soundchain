@@ -3,8 +3,12 @@
 .navigation {
   &__group {
     &__name {
+      margin: 1rem 0;
+
       color: #6b615c;
-      font-size: 1rem;
+      font-size: 0.8em;
+      text-transform: uppercase;
+      letter-spacing: 1px;
     }
   }
 
@@ -12,7 +16,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin: 20px 0;
+    margin: 1em 0;
 
     color: color-not-activated;
 
@@ -25,9 +29,14 @@
       font-size: 1.1em;
     }
     &__icon {
-      height: 20px;
+      display: flex;
+      justify-content: center;
+
+      height: 1em;
+      width: 2em;
+
       > * {
-        height: 20px;
+        height: 1em;
       }
     }
   }

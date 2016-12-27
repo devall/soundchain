@@ -1,17 +1,30 @@
+@import "../../../css/variables.styl"
+
 .navigation-top {
   padding: 5px;
   display: flex;
   flex-direction: row;
 
+  &__divider {
+    min-height: 100%;
+    margin: 10px;
+    border: 1px solid #bebebe;
+  }
+
   &__element {
     &--avatar {
       height: 45px;
-      padding: 0 15px;
+      margin: 0 8px;
+    }
+
+    &--profile--panel {
+      height: 25px;
+      margin: 10px 0;
     }
 
     &, &--main {
       height: 25px;
-      padding: 10px 15px;
+      margin: 10px 15px;
       > * {
         height: 25px;
       }

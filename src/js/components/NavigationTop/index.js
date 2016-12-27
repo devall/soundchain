@@ -1,7 +1,7 @@
 export default from './NavigationTop'
 
-export * from '../NavigationTop/NotificationsButton'
-export * from '../NavigationTop/MessagesButton'
-export * from '../NavigationTop/UploadButton'
-export * from '../NavigationTop/ExtraToolsButton'
+export * from './buttons/NotificationsButton'
+export * from './buttons/MessagesButton'
+export * from './buttons/UploadButton'
+export * from './buttons/ExtraToolsButton'
 export * from '../NavigationTop/ProfilePanel'

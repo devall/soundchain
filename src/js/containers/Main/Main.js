@@ -9,7 +9,7 @@ import { mainSelector } from 'selectors';
 import NavigationTop from '../../components/NavigationTop';
 import SidebarBox from '../../components/SidebarBox';
 import ContentBox from '../../components/ContentBox';
-import PlayerPanel from '../../components/PlayerPanel';
+import PlayerPanel from '../../components/TrackPlayerPanel';
 
 import BottomPanel from '../../components/BottomPanel/BottomPanel';
 
@@ -56,8 +56,8 @@ export default class Main extends Component {
           <ContentBox>
             {content}
           </ContentBox>
-          <BottomPanel>
-            <PlayerPanel />
+          <BottomPanel isLineLight={true}>
+            <PlayerPanel/>
           </BottomPanel>
         </section>
 

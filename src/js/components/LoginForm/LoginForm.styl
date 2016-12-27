@@ -1,7 +1,8 @@
 :local .login-form {
   display: flex;
-  flex: 1;
   flex-direction: column;
+
+  flex: 1;
 
   font-size: 14px;
 
@@ -13,21 +14,25 @@
     margin: 5px 0;
   }
 
+  &__row--register {
+    align-self: flex-end;
+  }
+
   &__login-with--fb, &__login-with--sc, &__input-field, &__input-button {
     border-radius: 100px;
-    margin: 5px;
+    margin: 0.37em;
   }
 
   &__line {
     flex: 1;
-    margin: 0 20px;
+    margin: 0 1.3em;
     border-top: #454545 solid 1px;
     height: 0;
   }
 
   &__input-field {
     flex: 1;
-    padding: 15px;
+    padding: 1.8em;
 
     &, &:hover {
       border: 0;
@@ -35,14 +40,14 @@
   }
 
   &__input-button {
-    padding: 20px 60px;
+    padding: 1.8em 3.5em;
     text-transform: uppercase;
     background-color: #04bd5b;
   }
 
   &__login-with {
     &--fb, &--sc {
-      padding: 20px;
+      padding: 1.4em;
 
       flex: 1;
 

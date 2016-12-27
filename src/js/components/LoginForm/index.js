@@ -9,6 +9,7 @@ export default function(props) {
         <div className={cx("login-form__login-with--fb")}>Login with <span className={cx("login-form__login-with__social-network-name")}>Facebook</span></div>
         <div className={cx("login-form__login-with--sc")}>Login with <span className={cx("login-form__login-with__social-network-name")}>SoundCloud</span></div>
       </div>
+      <br/>
       <div className={cx("login-form__row")}>
         <div className={cx("login-form__line")}/>
         OR
@@ -22,7 +23,7 @@ export default function(props) {
         <div className={cx("login-form__input-button")}>Login</div>
         <div className={cx("login-form__forgot-password")}>Forgot password?</div>
       </div>
-      <div className={cx("login-form__row")}>
+      <div className={cx("login-form__row", "login-form__row--register")}>
         <div className={cx("login-form__register")}>No account? <span className={cx("login-form__register__button")}>Register</span></div>
       </div>
     </div>

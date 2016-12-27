@@ -27,9 +27,9 @@ const dev = require('webpack-dev-middleware')(compiler, {
 app.use(dev);
 app.use(hot);
 
-app.get('*', (req, res) => {
+app.get('*', (req, res, next) => {
   const filename = path.join(compiler.outputPath, 'index.html');
-  compiler.outputFileSystem.readFile(filename, function(err, result){
+  compiler.outputFileSystem.readFile(filename, function(err, result) {
     if (err) {
       return next(err);
     }

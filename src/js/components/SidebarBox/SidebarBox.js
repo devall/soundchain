@@ -7,27 +7,22 @@ import BottomPanel from '../BottomPanel/BottomPanel'
 
 import { NavigationGroup, NavigationItem } from "../Navigation/Navigation"
 
-import { ButtonNextSong, ButtonPrevSong } from './Icons';
-import { PlayButton } from "../TrackPlayerComponents"
+import { ButtonNextSong, ButtonPrevSong, ButtonPlay } from './icons/PlayerControllIcons';
 
 import cx from './SidebarBox.styl';
 
-import StreamIcon from "./ico_Stream.png";
-import Top50Icon from "./ico_top50";
-import NewChartsIcon from "./ico_new_charts.png";
-import FavsIcon from "./ico_favourite";
-import FollowingIcon from "./ico_Followin";
+import StreamIcon from "./icons/ico_Stream.png";
+import Top50Icon from "./icons/ico_top50";
+import NewChartsIcon from "./icons/ico_new_charts.png";
+import FavsIcon from "./icons/ico_favourite";
+import FollowingIcon from "./icons/ico_Followin";
 
 function PlayerControls(props) {
   return (
     <div className={cx("sidebar__player")}>
-      <div className={cx("sidebar__player__control")}>
-        <ButtonPrevSong/>
-      </div>
-      <PlayButton className={cx("sidebar__player__control--big")}/>
-      <div className={cx("sidebar__player__control")}>
-        <ButtonNextSong/>
-      </div>
+      <ButtonPrevSong className={cx("sidebar__player__control")}/>
+      <ButtonPlay className={cx("sidebar__player__control--big")}/>
+      <ButtonNextSong className={cx("sidebar__player__control")}/>
     </div>
   );
 }

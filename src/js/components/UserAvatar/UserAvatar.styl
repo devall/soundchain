@@ -1,3 +1,21 @@
-.avatar-picture {
+@import "../../../css/variables.styl"
+
+.avatar__picture {
+  height: 100%;
   border-radius: 50%;
+}
+
+.avatar__box {
+  &, &__children {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.username {
+  text-transform: uppercase;
+  color: color-activated;
+  margin-right: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
 }

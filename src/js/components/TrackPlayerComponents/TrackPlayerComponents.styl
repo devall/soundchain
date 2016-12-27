@@ -1,7 +1,7 @@
 @import '../../../css/variables.styl'
 
-.button {
-  &__like {
+:local .button {
+  &__like, &__repeat, &__sound, &__more {
     fill-rule: evenodd;
     fill: color-not-activated;
 
@@ -10,19 +10,17 @@
     }
   }
 
-  &-play {
+  &__play {
+    fill-rule: evenodd;
     fill: #acacac;
-    &-active {
-      fill: #04bd5b;
-    }
 
-    &, &-active {
-      fill-rule: evenodd;
+    &--active {
+      fill: #04bd5b;
     }
   }
 }
 
-.track-info {
+:local .track-info {
   margin: 0 15px;
   height: 100%;
   display: flex;
@@ -34,6 +32,8 @@
     font-size: 0.8em;
     text-transform: uppercase;
     color: #acacac;
+    letter-spacing: 1px;
+    font-weight: 500;
   }
 
   &__name {
@@ -42,7 +42,7 @@
   }
 }
 
-.track-timeline {
+:local .track-timeline {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -73,5 +73,49 @@
 
   &__total-time {
     color: #c0c0c0;
+  }
+}
+
+.track-timeline--full {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.audio-graph {
+  height: 100%;
+  flex: 1;
+
+  & > canvas {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+
+    font-size: 0.8em;
+  }
+
+  &__played-time {
+    color: green;
+    background-color: black;
+    padding: 5px;
+  }
+
+  &__total-time {
+    color: green;
+    background-color: black;
+    padding: 5px;
   }
 }

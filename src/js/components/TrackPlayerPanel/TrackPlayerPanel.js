@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import cx from './PlayerPanel.styl';
+import cx from './TrackPlayerPanel.styl';
 
-import MusicTrack from '../MusicTrack';
+import MusicTrack from '../TrackPlayer';
 
 export default class PlayerPanel extends Component { // eslint-disable-line
   render() {

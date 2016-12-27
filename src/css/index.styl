@@ -6,3 +6,6 @@ body {
   background: main-background-color;
   font-family: "roboto";
 }
+
+//Fix for broken flex with overflow: hidden (See https://jsfiddle.net/abkhavsc/2/ for more details. white-space: nowrap can be removed, but it's just easyer this way)
+* { min-width: 0; }
