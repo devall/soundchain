@@ -11,11 +11,11 @@
     &--fullmode {
       display: flex;
       flex-direction: row;
-      margin: 20px;
+      height: 150px;
     }
 
     &--fullmode > &__album {
-      height: 200px;
+      height: 150px;
     }
 
     & > &__album {
@@ -48,14 +48,18 @@
     &--full {
       display: flex;
       flex-direction: column;
+
+      height: 100%;
       flex: 1;
       padding: 0 20px;
+
+      font-size: 0.8em;
 
       &__context-top {
         display: flex;
         flex-direction: row;
 
-        flex: 0.4;
+        flex: 0.5;
       }
 
       &__context-bottom {
@@ -127,7 +131,7 @@
   display: flex;
   flex-direction: row;
   flex: 1;
-  font-size: 1.6em;
+  font-size: 2em;
 }
 
 :local .right {

@@ -32,7 +32,7 @@ function FullPlayer(props) {
         <div className={cx("right")}>
           <div className={cx("right__column")}>
             <div className={cx("right__column__item")}>
-              <div className={cx("track__player__released-ago")}>
+              <div className={cx("track__player__release-date")}>
                 3 month
               </div>
             </div>

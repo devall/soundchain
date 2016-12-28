@@ -6,7 +6,7 @@ const config = require('./webpack.config.development');
 const app = express();
 const compiler = webpack(config);
 
-const HOST = process.env.HOST || 'localhost';
+const HOST = process.env.HOST || '0.0.0.0';
 const PORT = process.env.PORT || 8090;
 
 const hot = require('webpack-hot-middleware')(compiler);
