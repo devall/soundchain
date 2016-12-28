@@ -21,7 +21,7 @@ function handlePlayerCanvas(trackInfo, played, totalTime, container) {
     canvas.height = height;
     ctx.fillStyle = "#04bd5b";
 
-    let aspect = Math.ceil(5 * trackInfo.length / width);
+    let aspect = Math.ceil(4 * trackInfo.length / width);
     if (aspect <= 0) return;
 
     const widthOfLine = width / Math.floor(trackInfo.length / aspect) - 2;
