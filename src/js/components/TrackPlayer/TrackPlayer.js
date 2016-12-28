@@ -12,7 +12,7 @@ function CompactPlayer(props) {
       </div>
       <div className={cx("track__player--compact__controls")}>
         <SmallPlayButton className={cx("track__player__button")}/>
-        <TrackTimeline totalTime={123} played={30}/>
+        <TrackTimeline className={cx("track__player__time-line")} totalTime={123} played={30}/>
         <LikeButton className={cx("track__player__button--big")}/>
         <RepeatButton className={cx("track__player__button--big")}/>
         <SoundButton className={cx("track__player__button--big")}/>

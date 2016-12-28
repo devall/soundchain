@@ -8,7 +8,7 @@ export function TrackTime(props) {
 
 export function TrackTimeline(props) {
   return (
-    <div className={cx("track-timeline")}>
+    <div className={cx("track-timeline", props.className)}>
       <TrackTime time={props.played} className={cx("track-timeline__current-time")}/>
       <progress className={cx("track-timeline__progress-bar")} max={props.totalTime} value={props.played}/>
       <TrackTime time={props.totalTime} className={cx("track-timeline__total-time")}/>

@@ -8,14 +8,14 @@ import SteamBackgroundImage from './background.png'
 import { UserAvatarWithName } from "../../components/UserAvatar";
 
 //TODO there is no such things as track right now, so all information about track is send as props
-//Change props to track when track would be avalible
+//Change props to track when track would be available
 function StreamItem() {
   return (
-    <div>
+    <div className={cx("stream__item")}>
       <UserAvatarWithName className={cx("stream__item__user-box")} username="blah"><div className="stream__item__user-box__info-text">Reposted a track 2 days ago</div></UserAvatarWithName>
       <MusicTrack
         albumImageUrl="https://pp.vk.me/c604817/v604817661/1a12c/s7ex-DUOodk.jpg"
-        trackAudioInfo={range(1, 800).map(Math.random)}
+        trackAudioInfo={range(1, 600).map(Math.random)}
       />
     </div>
   );
